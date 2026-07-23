@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seasons of Strength | Newnan, Georgia</title>
+<meta name="description" content="A live performance built from a community's own oral histories — 100+ voices from Newnan, Georgia's recovery from the 2021 EF-4 tornado, woven into orchestral music, dance, and documentary video.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.seasonsofstrengthnewnan.org/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seasons of Strength | Newnan, Georgia">
+<meta property="og:description" content="100+ voices. One community. One EF-4 tornado. A live performance built from a community's own oral histories.">
+<meta property="og:url" content="https://www.seasonsofstrengthnewnan.org/">
+<meta property="og:site_name" content="Seasons of Strength">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "PerformingGroup",
+      "name": "Seasons of Strength",
+      "url": "https://www.seasonsofstrengthnewnan.org",
+      "description": "A multidisciplinary performance organization based in Newnan, Georgia, building oral histories from disaster-affected communities into live performances integrating orchestral music, contemporary dance, and documentary video.",
+      "foundingLocation": { "@type": "Place", "name": "Newnan, Georgia" }
+    },
+    {
+      "@type": "TheaterEvent",
+      "name": "Seasons of Strength — World Premiere",
+      "startDate": "2026-03-21",
+      "endDate": "2026-03-22",
+      "location": {
+        "@type": "Place",
+        "name": "Unity Baptist Church",
+        "address": { "@type": "PostalAddress", "streetAddress": "311 Smokey Rd", "addressLocality": "Newnan", "addressRegion": "GA", "postalCode": "30263" }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --dark-gray: #595045;
+    --brown: #9f7c50;
+    --gold: #e6c18a;
+    --light-cream: #f5eacf;
+    --cream: #fdf9ee;
+    --teal: #46a5af;
+    --ink: #2e2920;
+    --ink-mid: #595045;
+    --stone: #8a7a6a;
+    --rule: #ddd0b8;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Montserrat', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(253,249,238,0.95); backdrop-filter: blur(12px); border-bottom: 0.5px solid var(--rule); }
+  .nav-logo { display: block; flex-shrink: 0; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.current { color: var(--teal); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+  .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--ink); margin: 5px 0; }
+
+  .hero { position: relative; width: 100%; min-height: 92vh; overflow: hidden; display: flex; align-items: flex-end; background: linear-gradient(155deg, var(--dark-gray) 0%, #4a4238 55%, #3a352c 100%); }
+  .hero-texture { position: absolute; inset: 0; opacity: 0.5; background-image: repeating-linear-gradient(115deg, transparent, transparent 2px, rgba(230,193,138,0.03) 2px, rgba(230,193,138,0.03) 3px); }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(46,41,32,0.1) 0%, rgba(46,41,32,0.25) 45%, rgba(46,41,32,0.82) 100%); }
+  .hero-content { position: relative; z-index: 2; padding: 0 3rem 4.5rem; max-width: 920px; }
+  .hero-eyebrow { font-family: var(--sans); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(245,234,207,0.62); margin-bottom: 0.9rem; }
+  .hero-title { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 400; line-height: 1.12; color: var(--light-cream); margin-bottom: 1.4rem; letter-spacing: -0.005em; }
+  .hero-subtitle { font-family: var(--serif); font-size: clamp(1.05rem, 2vw, 1.4rem); font-weight: 400; font-style: italic; color: rgba(245,234,207,0.82); line-height: 1.55; max-width: 620px; margin-bottom: 2rem; }
+  .hero-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.6rem; background: var(--teal); color: #fff; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+  .btn-primary:hover { background: #3a8a92; }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.6rem; background: transparent; color: rgba(245,234,207,0.8); font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 0.5px solid rgba(245,234,207,0.35); transition: border-color 0.2s, color 0.2s; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .scroll-hint { position: absolute; bottom: 2rem; right: 3rem; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(245,234,207,0.38); font-family: var(--sans); font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
+  .scroll-line { width: 1px; height: 40px; background: rgba(245,234,207,0.22); position: relative; overflow: hidden; }
+  .scroll-line::after { content: ''; position: absolute; top: -100%; left: 0; width: 1px; height: 100%; background: rgba(245,234,207,0.65); animation: scrollDown 2s ease-in-out infinite; }
+  @keyframes scrollDown { 0%{top:-100%} 60%,100%{top:100%} }
+
+  section { padding: 6rem 3rem; }
+  .section-inner { max-width: 960px; margin: 0 auto; }
+  .section-eyebrow { font-family: var(--sans); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1.5rem; }
+
+  .context-section { background: var(--cream); border-bottom: 0.5px solid var(--rule); }
+  .context-lede { font-family: var(--serif); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 400; line-height: 1.45; color: var(--ink); margin-bottom: 1.5rem; }
+  .context-body { font-family: var(--sans); font-size: 0.855rem; font-weight: 300; line-height: 1.9; color: var(--ink-mid); max-width: 700px; }
+  .context-body p + p { margin-top: 1rem; }
+  .score-note { margin-top: 1.75rem; padding: 1.5rem 1.75rem; border-left: 2px solid var(--teal); background: var(--light-cream); font-family: var(--sans); font-size: 0.8rem; font-weight: 300; line-height: 1.8; color: var(--ink-mid); max-width: 700px; }
+  .score-note strong { color: var(--ink); font-weight: 500; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3.5rem; background: var(--rule); }
+  .stat-cell { background: var(--cream); padding: 2.25rem 1.5rem; text-align: center; }
+  .stat-num { font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 2.75rem); font-weight: 400; color: var(--teal); line-height: 1; margin-bottom: 0.5rem; }
+  .stat-label { font-family: var(--sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); }
+
+  .quote-section { background: var(--dark-gray); text-align: center; }
+  .quote-mark { font-family: var(--serif); font-size: 3.5rem; color: var(--gold); line-height: 1; opacity: 0.5; margin-bottom: 0.5rem; }
+  .quote-text { font-family: var(--serif); font-size: clamp(1.3rem, 2.5vw, 1.9rem); font-weight: 400; font-style: italic; color: var(--light-cream); line-height: 1.5; max-width: 780px; margin: 0 auto 1.5rem; }
+  .quote-attr { font-family: var(--sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,234,207,0.5); }
+
+  .closing-section { background: var(--light-cream); border-top: 0.5px solid var(--rule); text-align: center; }
+  .closing-title { font-family: var(--serif); font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 400; color: var(--ink); line-height: 1.2; margin-bottom: 1.25rem; }
+  .closing-body { font-family: var(--sans); font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: var(--ink-mid); max-width: 560px; margin: 0 auto 2.25rem; }
+  .closing-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-dark { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 1.8rem; background: var(--ink); color: var(--cream); font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+  .btn-dark:hover { background: var(--teal); }
+  .btn-outline-dark { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 1.8rem; background: transparent; color: var(--ink); font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--ink); transition: all 0.2s; }
+  .btn-outline-dark:hover { background: var(--ink); color: var(--cream); }
+
+  footer { background: var(--dark-gray); padding: 4rem 3rem 2.25rem; color: rgba(245,234,207,0.7); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 3rem; flex-wrap: wrap; padding-bottom: 2.25rem; border-bottom: 0.5px solid rgba(245,234,207,0.14); margin-bottom: 2rem; }
+  .footer-logo svg { display: block; }
+  .footer-credit { font-family: var(--sans); font-size: 0.62rem; color: rgba(245,234,207,0.35); margin-top: 0.85rem; max-width: 220px; line-height: 1.6; }
+  .footer-nav-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .footer-nav-links a { font-family: var(--sans); font-size: 0.64rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,234,207,0.55); text-decoration: none; transition: color 0.2s; }
+  .footer-nav-links a:hover { color: var(--gold); }
+  .footer-social { display: flex; gap: 0.85rem; }
+  .footer-social a { width: 32px; height: 32px; border: 0.5px solid rgba(245,234,207,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(245,234,207,0.6); text-decoration: none; transition: border-color 0.2s, color 0.2s; font-size: 0.7rem; }
+  .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+  .footer-signup { padding-bottom: 2.25rem; border-bottom: 0.5px solid rgba(245,234,207,0.14); margin-bottom: 2.25rem; }
+  .footer-signup-label { font-family: var(--sans); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; }
+  .signup-form { display: flex; gap: 0.6rem; max-width: 380px; flex-wrap: wrap; }
+  .signup-form input { flex: 1; min-width: 180px; padding: 0.7rem 0.9rem; background: rgba(245,234,207,0.06); border: 0.5px solid rgba(245,234,207,0.25); color: var(--light-cream); font-family: var(--sans); font-size: 0.75rem; }
+  .signup-form input::placeholder { color: rgba(245,234,207,0.4); }
+  .signup-form button { padding: 0.7rem 1.3rem; background: var(--teal); color: #fff; border: none; font-family: var(--sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+  .signup-form button:hover { background: #3a8a92; }
+  .funder-block { padding-bottom: 2rem; border-bottom: 0.5px solid rgba(245,234,207,0.1); margin-bottom: 1.75rem; }
+  .funder-line { font-family: var(--sans); font-size: 0.66rem; line-height: 1.85; color: rgba(245,234,207,0.42); max-width: 820px; margin-bottom: 0.85rem; }
+  .funder-line:last-of-type { margin-bottom: 0; }
+  .fiscal-sponsor-row { margin-top: 1.25rem; font-family: var(--sans); font-size: 0.64rem; letter-spacing: 0.04em; color: rgba(245,234,207,0.4); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-family: var(--sans); font-size: 0.62rem; color: rgba(245,234,207,0.32); }
+  .footer-bottom a { color: rgba(245,234,207,0.5); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 56px; left: 0; right: 0; background: rgba(253,249,238,0.98); backdrop-filter: blur(12px); padding: 2rem 1.5rem 3rem; gap: 1.75rem; border-bottom: 0.5px solid var(--rule); }
+    .hero-content { padding: 0 1.5rem 3.5rem; }
+    section { padding: 4rem 1.5rem; }
+    .stat-row { grid-template-columns: 1fr; }
+    footer { padding: 3rem 1.5rem 2rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in { transition: none; }
+    .scroll-line::after { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo" aria-label="Seasons of Strength home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="31 231 313 22" height="16" style="display:block;" aria-label="Seasons of Strength"><g fill="#46a5af"><g fill="#231f20" fill-opacity="1"><g transform="translate(33.055509, 249.644192)"><g><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z M 7.625 0.15625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(48.334377, 249.644192)"><g><path d="M 15.140625 -1.59375 L 15.140625 0 L 2.828125 0 L 2.828125 -17.40625 L 14.765625 -17.40625 L 14.765625 -15.8125 L 4.671875 -15.8125 L 4.671875 -9.625 L 13.671875 -9.625 L 13.671875 -8.046875 L 4.671875 -8.046875 L 4.671875 -1.59375 Z M 15.140625 -1.59375 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(64.954802, 249.644192)"><g><path d="M 13.75 -4.65625 L 4.046875 -4.65625 L 1.96875 0 L 0.046875 0 L 8 -17.40625 L 9.8125 -17.40625 L 17.78125 0 L 15.828125 0 Z M 13.078125 -6.140625 L 8.90625 -15.484375 L 4.71875 -6.140625 Z M 13.078125 -6.140625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(82.767725, 249.644192)"><g><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z M 7.625 0.15625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(98.046593, 249.644192)"><g><path d="M 10.4375 0.15625 C 8.71875 0.15625 7.15625 -0.226562 5.75 -1 C 4.351562 -1.769531 3.257812 -2.828125 2.46875 -4.171875 C 1.6875 -5.515625 1.296875 -7.023438 1.296875 -8.703125 C 1.296875 -10.378906 1.6875 -11.882812 2.46875 -13.21875 C 3.257812 -14.5625 4.351562 -15.617188 5.75 -16.390625 C 7.15625 -17.160156 8.71875 -17.546875 10.4375 -17.546875 C 12.164062 -17.546875 13.71875 -17.164062 15.09375 -16.40625 C 16.476562 -15.644531 17.566406 -14.585938 18.359375 -13.234375 C 19.160156 -11.890625 19.5625 -10.378906 19.5625 -8.703125 C 19.5625 -7.023438 19.160156 -5.507812 18.359375 -4.15625 C 17.566406 -2.8125 16.476562 -1.753906 15.09375 -0.984375 C 13.71875 -0.222656 12.164062 0.15625 10.4375 0.15625 Z M 10.4375 -1.484375 C 11.8125 -1.484375 13.050781 -1.796875 14.15625 -2.421875 C 15.269531 -3.046875 16.140625 -3.90625 16.765625 -5 C 17.398438 -6.101562 17.71875 -7.335938 17.71875 -8.703125 C 17.71875 -10.054688 17.398438 -11.285156 16.765625 -12.390625 C 16.140625 -13.492188 15.269531 -14.351562 14.15625 -14.96875 C 13.050781 -15.59375 11.8125 -15.90625 10.4375 -15.90625 C 9.0625 -15.90625 7.8125 -15.59375 6.6875 -14.96875 C 5.570312 -14.351562 4.695312 -13.492188 4.0625 -12.390625 C 3.425781 -11.285156 3.109375 -10.054688 3.109375 -8.703125 C 3.109375 -7.335938 3.425781 -6.101562 4.0625 -5 C 4.695312 -3.90625 5.570312 -3.046875 6.6875 -2.421875 C 7.8125 -1.796875 9.0625 -1.484375 10.4375 -1.484375 Z M 10.4375 -1.484375 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(118.890449, 249.644192)"><g><path d="M 17.375 -17.40625 L 17.375 0 L 15.859375 0 L 4.671875 -14.125 L 4.671875 0 L 2.828125 0 L 2.828125 -17.40625 L 4.34375 -17.40625 L 15.5625 -3.28125 L 15.5625 -17.40625 Z M 17.375 -17.40625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(139.088365, 249.644192)"><g><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z M 7.625 0.15625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(160.876278, 249.644192)"><g><path d="M 10.4375 0.15625 C 8.71875 0.15625 7.15625 -0.226562 5.75 -1 C 4.351562 -1.769531 3.257812 -2.828125 2.46875 -4.171875 C 1.6875 -5.515625 1.296875 -7.023438 1.296875 -8.703125 C 1.296875 -10.378906 1.6875 -11.882812 2.46875 -13.21875 C 3.257812 -14.5625 4.351562 -15.617188 5.75 -16.390625 C 7.15625 -17.160156 8.71875 -17.546875 10.4375 -17.546875 C 12.164062 -17.546875 13.71875 -17.164062 15.09375 -16.40625 C 16.476562 -15.644531 17.566406 -14.585938 18.359375 -13.234375 C 19.160156 -11.890625 19.5625 -10.378906 19.5625 -8.703125 C 19.5625 -7.023438 19.160156 -5.507812 18.359375 -4.15625 C 17.566406 -2.8125 16.476562 -1.753906 15.09375 -0.984375 C 13.71875 -0.222656 12.164062 0.15625 10.4375 0.15625 Z M 10.4375 -1.484375 C 11.8125 -1.484375 13.050781 -1.796875 14.15625 -2.421875 C 15.269531 -3.046875 16.140625 -3.90625 16.765625 -5 C 17.398438 -6.101562 17.71875 -7.335938 17.71875 -8.703125 C 17.71875 -10.054688 17.398438 -11.285156 16.765625 -12.390625 C 16.140625 -13.492188 15.269531 -14.351562 14.15625 -14.96875 C 13.050781 -15.59375 11.8125 -15.90625 10.4375 -15.90625 C 9.0625 -15.90625 7.8125 -15.59375 6.6875 -14.96875 C 5.570312 -14.351562 4.695312 -13.492188 4.0625 -12.390625 C 3.425781 -11.285156 3.109375 -10.054688 3.109375 -8.703125 C 3.109375 -7.335938 3.425781 -6.101562 4.0625 -5 C 4.695312 -3.90625 5.570312 -3.046875 6.6875 -2.421875 C 7.8125 -1.796875 9.0625 -1.484375 10.4375 -1.484375 Z M 10.4375 -1.484375 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(181.720133, 249.644192)"><g><path d="M 4.671875 -15.8125 L 4.671875 -8.96875 L 13.671875 -8.96875 L 13.671875 -7.390625 L 4.671875 -7.390625 L 4.671875 0 L 2.828125 0 L 2.828125 -17.40625 L 14.765625 -17.40625 L 14.765625 -15.8125 Z M 4.671875 -15.8125 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(203.955236, 249.644192)"><g><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z M 7.625 0.15625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(219.234104, 249.644192)"><g><path d="M 6.21875 -15.8125 L 0.09375 -15.8125 L 0.09375 -17.40625 L 14.171875 -17.40625 L 14.171875 -15.8125 L 8.046875 -15.8125 L 8.046875 0 L 6.21875 0 Z M 6.21875 -15.8125 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(233.494368, 249.644192)"><g><path d="M 14.71875 0 L 10.734375 -5.59375 C 10.285156 -5.539062 9.820312 -5.515625 9.34375 -5.515625 L 4.671875 -5.515625 L 4.671875 0 L 2.828125 0 L 2.828125 -17.40625 L 9.34375 -17.40625 C 11.5625 -17.40625 13.300781 -16.875 14.5625 -15.8125 C 15.820312 -14.75 16.453125 -13.289062 16.453125 -11.4375 C 16.453125 -10.070312 16.109375 -8.921875 15.421875 -7.984375 C 14.734375 -7.054688 13.753906 -6.382812 12.484375 -5.96875 L 16.734375 0 Z M 9.296875 -7.078125 C 11.015625 -7.078125 12.332031 -7.457031 13.25 -8.21875 C 14.164062 -8.988281 14.625 -10.0625 14.625 -11.4375 C 14.625 -12.84375 14.164062 -13.921875 13.25 -14.671875 C 12.332031 -15.429688 11.015625 -15.8125 9.296875 -15.8125 L 4.671875 -15.8125 L 4.671875 -7.078125 Z M 9.296875 -7.078125 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(251.456373, 249.644192)"><g><path d="M 15.140625 -1.59375 L 15.140625 0 L 2.828125 0 L 2.828125 -17.40625 L 14.765625 -17.40625 L 14.765625 -15.8125 L 4.671875 -15.8125 L 4.671875 -9.625 L 13.671875 -9.625 L 13.671875 -8.046875 L 4.671875 -8.046875 L 4.671875 -1.59375 Z M 15.140625 -1.59375 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(268.076809, 249.644192)"><g><path d="M 17.375 -17.40625 L 17.375 0 L 15.859375 0 L 4.671875 -14.125 L 4.671875 0 L 2.828125 0 L 2.828125 -17.40625 L 4.34375 -17.40625 L 15.5625 -3.28125 L 15.5625 -17.40625 Z M 17.375 -17.40625 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(288.274714, 249.644192)"><g><path d="M 15.09375 -8.703125 L 16.859375 -8.703125 L 16.859375 -2.0625 C 16.046875 -1.351562 15.082031 -0.804688 13.96875 -0.421875 C 12.863281 -0.0351562 11.695312 0.15625 10.46875 0.15625 C 8.726562 0.15625 7.160156 -0.222656 5.765625 -0.984375 C 4.367188 -1.753906 3.273438 -2.8125 2.484375 -4.15625 C 1.691406 -5.507812 1.296875 -7.023438 1.296875 -8.703125 C 1.296875 -10.378906 1.691406 -11.890625 2.484375 -13.234375 C 3.273438 -14.585938 4.367188 -15.644531 5.765625 -16.40625 C 7.160156 -17.164062 8.734375 -17.546875 10.484375 -17.546875 C 11.816406 -17.546875 13.035156 -17.332031 14.140625 -16.90625 C 15.253906 -16.488281 16.191406 -15.867188 16.953125 -15.046875 L 15.8125 -13.875 C 14.4375 -15.226562 12.6875 -15.90625 10.5625 -15.90625 C 9.15625 -15.90625 7.882812 -15.59375 6.75 -14.96875 C 5.613281 -14.351562 4.722656 -13.492188 4.078125 -12.390625 C 3.429688 -11.285156 3.109375 -10.054688 3.109375 -8.703125 C 3.109375 -7.335938 3.429688 -6.109375 4.078125 -5.015625 C 4.722656 -3.921875 5.609375 -3.054688 6.734375 -2.421875 C 7.859375 -1.796875 9.128906 -1.484375 10.546875 -1.484375 C 12.328125 -1.484375 13.84375 -1.929688 15.09375 -2.828125 Z M 15.09375 -8.703125 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(307.478883, 249.644192)"><g><path d="M 6.21875 -15.8125 L 0.09375 -15.8125 L 0.09375 -17.40625 L 14.171875 -17.40625 L 14.171875 -15.8125 L 8.046875 -15.8125 L 8.046875 0 L 6.21875 0 Z M 6.21875 -15.8125 "/></g></g></g>
+<g fill="#231f20" fill-opacity="1"><g transform="translate(321.739159, 249.644192)"><g><path d="M 17.375 -17.40625 L 17.375 0 L 15.5625 0 L 15.5625 -8.03125 L 4.671875 -8.03125 L 4.671875 0 L 2.828125 0 L 2.828125 -17.40625 L 4.671875 -17.40625 L 4.671875 -9.640625 L 15.5625 -9.640625 L 15.5625 -17.40625 Z M 17.375 -17.40625 "/></g></g></g></g></svg></a>
+  <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/" class="current">Home</a></li>
+    <li><a href="/our-story">About</a></li>
+    <li><a href="/portfolio">Bring the Work</a></li>
+    <li><a href="/watch">Watch</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<!-- TODO: replace this gradient placeholder with the full-bleed hero video once Gwendolyn sends the clip. -->
+<section class="hero">
+  <div class="hero-texture"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Newnan, Georgia &nbsp;&middot;&nbsp; World Premiere March 21 &amp; 22, 2026</p>
+    <h1 class="hero-title">We survived together.<br>We rebuilt together.<br>We healed together.</h1>
+    <p class="hero-subtitle">A live performance built from a community's own oral histories — woven into orchestral music, dance, and documentary video.</p>
+    <div class="hero-cta-row">
+      <a href="/watch" class="btn-primary">Watch the Work</a>
+      <a href="/our-story" class="btn-ghost">How It Was Made</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div>scroll</div>
+</section>
+
+<!-- WHAT IT IS -->
+<section class="context-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">The Project</p>
+      <h2 class="context-lede">100+ stories. One tornado. A single night made from both.</h2>
+      <div class="context-body">
+        <p>In March 2021, an EF-4 tornado moved through Newnan, Georgia, and tore open the lives of thousands of people. In the years that followed, creator and director Gwendolyn Kuhlmann collected more than one hundred recorded voices from the community — survivors, first responders, case workers, children, elders, and faith leaders.</p>
+        <p>Those voices became <strong>Seasons of Strength</strong>: a ninety-minute live performance weaving oral history, a symphony orchestra, contemporary dance, and projected documentary video into a single experience.</p>
+      </div>
+      <div class="score-note">
+        The score is built on <strong>Max Richter's <em>Recomposed: The Four Seasons</em></strong> across Acts II&ndash;V. Act I opens on improvisations of Alan Jackson's <strong>&ldquo;Chattahoochee&rdquo;</strong> and Isabella Ivy's <strong><em>Sirens: Voices from the Heavens</em></strong>.
+      </div>
+    </div>
+
+    <div class="stat-row fade-in">
+      <div class="stat-cell">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Stories Collected</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">Dozens</div>
+        <div class="stat-label">Of Partners</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Performances Given</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY QUOTE -->
+<section class="quote-section">
+  <div class="section-inner fade-in">
+    <div class="quote-mark">&ldquo;</div>
+    <p class="quote-text">We all have our sliver of a story of our experience, and then you hear all the other stories and you just realize &mdash; it's not about me. The impact was profound, but the kindness and generosity were more profound.</p>
+    <p class="quote-attr">LaVann Landrum &middot; Newnan, Georgia</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing-section">
+  <div class="section-inner">
+    <h2 class="closing-title">See the work. See how it was made.</h2>
+    <p class="closing-body">Seasons of Strength premiered March 21 &amp; 22, 2026, at Unity Baptist Church. This is where the story lives now.</p>
+    <div class="closing-actions">
+      <a href="/watch" class="btn-dark">Watch the Work</a>
+      <a href="/our-story" class="btn-outline-dark">Learn How It Was Made</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Seasons of Strength home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="31 231 313 22" height="14" aria-label="Seasons of Strength"><g fill="#f5eacf"><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z" transform="translate(33,249.6)"/></g>
+          <text x="55" y="249.6" font-family="Georgia, serif" font-size="18" fill="#f5eacf" letter-spacing="1">Seasons of Strength</text>
+        </svg></a>
+        <p class="footer-credit">Logo by Al Smith, Coweta County Commissioner and local artist, 2001 Art Studio.</p>
+      </div>
+      <ul class="footer-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/our-story">About</a></li>
+        <li><a href="/portfolio">Bring the Work</a></li>
+        <li><a href="/watch">Watch</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/seasonsofstrengthnewnan/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/seasonsofstrengthnewnan/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/@seasonsofstrengthnewnan" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+
+    <div class="footer-signup">
+      <p class="footer-signup-label">Stay connected</p>
+      <!-- TODO: wire to real Mailchimp (or replacement) list — placeholder form for now -->
+      <form class="signup-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Email address" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="funder-block">
+      <p class="funder-line">This program is supported in part by Georgia Council for the Arts through the appropriations of the Georgia General Assembly. Georgia Council for the Arts also receives support from its partner agency &ndash; the National Endowment for the Arts.</p>
+      <p class="funder-line">The project is also supported by Georgia Humanities, in partnership with the Georgia Department of Economic Development, through appropriations made by the Georgia General Assembly.</p>
+      <p class="funder-line">Seasons of Strength is also the proud recipient of grants from 100 Women Who Care, the 2025 YOUTH LEAD GA Bullard Community Champions, and the Caring Communities Foundation Coweta Together Grant.</p>
+      <p class="fiscal-sponsor-row">Fiscally sponsored by Caring Communities Foundation</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Seasons of Strength &middot; Newnan, Georgia</p>
+      <a href="mailto:info@seasonsofstrengthnewnan.org">info@seasonsofstrengthnewnan.org</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+</script>
+</body>
+</html>

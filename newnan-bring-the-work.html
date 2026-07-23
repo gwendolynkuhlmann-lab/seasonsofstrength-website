@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bring the Work | Seasons of Strength</title>
+<meta name="description" content="Atlanta-area stories of resilience, brought to life through performance. A scalable multidisciplinary work for presenters, festivals, and cultural programmers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.seasonsofstrengthnewnan.org/portfolio">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bring the Work | Seasons of Strength">
+<meta property="og:description" content="Atlanta-area stories of resilience, brought to life through performance. A scalable multidisciplinary work for presenters, festivals, and cultural programmers.">
+<meta property="og:url" content="https://www.seasonsofstrengthnewnan.org/portfolio">
+<meta property="og:site_name" content="Seasons of Strength">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --dark-gray: #595045; --brown: #9f7c50; --gold: #e6c18a; --light-cream: #f5eacf;
+    --cream: #fdf9ee; --teal: #46a5af; --ink: #2e2920; --ink-mid: #595045;
+    --stone: #8a7a6a; --rule: #ddd0b8; --serif: 'Playfair Display', Georgia, serif; --sans: 'Montserrat', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--cream); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 3rem; background: rgba(253,249,238,0.95); backdrop-filter: blur(12px); border-bottom: 0.5px solid var(--rule); }
+  .nav-logo { display: block; flex-shrink: 0; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-family: var(--sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.current { color: var(--teal); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+  .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--ink); margin: 5px 0; }
+
+  .page-banner { background: var(--dark-gray); padding: 9.5rem 3rem 4.5rem; }
+  .page-banner-inner { max-width: 820px; margin: 0 auto; }
+  .page-banner-eyebrow { font-family: var(--sans); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; }
+  .page-banner-title { font-family: var(--serif); font-size: clamp(2.1rem, 4.3vw, 3.1rem); font-weight: 400; color: var(--light-cream); line-height: 1.2; margin-bottom: 1rem; }
+  .page-banner-sub { font-family: var(--serif); font-size: clamp(1rem, 1.6vw, 1.2rem); font-style: italic; font-weight: 400; color: rgba(245,234,207,0.7); line-height: 1.6; max-width: 620px; }
+
+  section { padding: 5rem 3rem; }
+  .section-inner { max-width: 900px; margin: 0 auto; }
+  .section-eyebrow { font-family: var(--sans); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal); margin-bottom: 1.25rem; }
+  .section-title { font-family: var(--serif); font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 400; color: var(--ink); line-height: 1.25; margin-bottom: 1.5rem; }
+  .body-copy { font-family: var(--sans); font-size: 0.87rem; font-weight: 300; line-height: 1.9; color: var(--ink-mid); max-width: 740px; }
+  .body-copy p + p { margin-top: 1.1rem; }
+  .body-copy strong { color: var(--ink); font-weight: 500; }
+
+  .about-section { background: var(--cream); border-bottom: 0.5px solid var(--rule); }
+  .watch-section { background: var(--light-cream); border-bottom: 0.5px solid var(--rule); }
+  .experience-section { background: var(--dark-gray); }
+  .program-details-section { background: var(--cream); border-bottom: 0.5px solid var(--rule); }
+  .collab-section { background: var(--light-cream); border-bottom: 0.5px solid var(--rule); }
+  .matters-section { background: var(--cream); border-bottom: 0.5px solid var(--rule); }
+  .gallery-section { background: var(--dark-gray); text-align: center; }
+  .glance-section { background: var(--light-cream); border-bottom: 0.5px solid var(--rule); }
+  .testimonial-section { background: var(--cream); border-bottom: 0.5px solid var(--rule); }
+  .inquiries-section { background: var(--ink); text-align: center; }
+
+  .watch-card { display: flex; align-items: center; gap: 2rem; background: var(--dark-gray); padding: 2.25rem; margin-top: 2rem; max-width: 740px; flex-wrap: wrap; }
+  .watch-card-icon { width: 60px; height: 60px; border: 1.5px solid rgba(245,234,207,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); font-size: 1.1rem; }
+  .watch-card-text { flex: 1; min-width: 220px; }
+  .watch-card-text p:first-child { font-family: var(--serif); font-size: 1.15rem; color: var(--light-cream); margin-bottom: 0.35rem; }
+  .watch-card-text p:last-child { font-family: var(--sans); font-size: 0.75rem; color: rgba(245,234,207,0.5); line-height: 1.6; }
+  .watch-card-link { flex-shrink: 0; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.4rem; background: var(--teal); color: #fff; font-family: var(--sans); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+  .watch-card-link:hover { background: #3a8a92; }
+
+  .elements-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(245,234,207,0.12); margin-top: 2.5rem; }
+  .element-cell { background: var(--dark-gray); padding: 2rem 1.5rem; }
+  .element-num { font-family: var(--serif); font-size: 0.85rem; color: var(--gold); margin-bottom: 0.75rem; }
+  .element-title { font-family: var(--serif); font-size: 1.05rem; color: var(--light-cream); margin-bottom: 0.5rem; line-height: 1.3; }
+  .element-body { font-family: var(--sans); font-size: 0.72rem; color: rgba(245,234,207,0.55); line-height: 1.6; }
+  .experience-result { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: rgba(245,234,207,0.8); margin-top: 2.5rem; max-width: 700px; line-height: 1.6; }
+  .experience-section .section-eyebrow { color: var(--gold); }
+  .experience-section .section-title { color: var(--light-cream); }
+
+  .program-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border: 0.5px solid var(--rule); margin-top: 2.5rem; background: var(--cream); }
+  .program-cell { padding: 1.75rem 1.75rem; border-right: 0.5px solid var(--rule); }
+  .program-cell:last-child { border-right: none; }
+  .program-cell-label { font-family: var(--sans); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.75rem; }
+  .program-cell-body { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-mid); line-height: 1.7; }
+
+  .collab-list { margin-top: 1.75rem; }
+  .collab-list p { font-family: var(--sans); font-size: 0.85rem; font-weight: 300; line-height: 2; color: var(--ink-mid); max-width: 740px; }
+  .collab-list strong { color: var(--ink); font-weight: 500; }
+
+  .matters-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem 2.5rem; margin-top: 2rem; max-width: 780px; }
+  .matters-item { padding-left: 1.25rem; border-left: 2px solid var(--teal); }
+  .matters-item-title { font-family: var(--serif); font-size: 1rem; color: var(--ink); margin-bottom: 0.35rem; }
+  .matters-item-body { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-mid); line-height: 1.7; }
+
+  .gallery-credit { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.04em; color: rgba(245,234,207,0.55); }
+  .gallery-note { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--light-cream); margin-top: 0.75rem; }
+
+  .glance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2.5rem; margin-top: 2rem; max-width: 780px; }
+  .glance-item { display: flex; gap: 0.9rem; align-items: baseline; }
+  .glance-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 0.4rem; }
+  .glance-item p { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-mid); line-height: 1.6; }
+
+  .testimonial-placeholder { margin-top: 2rem; padding: 2rem 2.25rem; border: 1px dashed var(--rule); background: var(--light-cream); max-width: 700px; }
+  .testimonial-placeholder p { font-family: var(--sans); font-size: 0.8rem; font-style: italic; color: var(--stone); line-height: 1.8; }
+  .testimonial-placeholder cite { display: block; margin-top: 0.75rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brown); font-style: normal; }
+
+  .inquiries-title { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--cream); margin-bottom: 1rem; }
+  .inquiries-body { font-family: var(--sans); font-size: 0.85rem; color: rgba(253,249,238,0.6); line-height: 1.8; max-width: 500px; margin: 0 auto 1.75rem; }
+  .inquiries-email { display: inline-block; font-family: var(--sans); font-size: 0.85rem; font-weight: 500; color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(230,193,138,0.4); padding-bottom: 3px; }
+
+  footer { background: var(--dark-gray); padding: 4rem 3rem 2.25rem; color: rgba(245,234,207,0.7); }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 3rem; flex-wrap: wrap; padding-bottom: 2.25rem; border-bottom: 0.5px solid rgba(245,234,207,0.14); margin-bottom: 2rem; }
+  .footer-logo svg { display: block; }
+  .footer-credit { font-family: var(--sans); font-size: 0.62rem; color: rgba(245,234,207,0.35); margin-top: 0.85rem; max-width: 220px; line-height: 1.6; }
+  .footer-nav-links { display: flex; gap: 1.75rem; list-style: none; flex-wrap: wrap; }
+  .footer-nav-links a { font-family: var(--sans); font-size: 0.64rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,234,207,0.55); text-decoration: none; transition: color 0.2s; }
+  .footer-nav-links a:hover, .footer-nav-links a.current { color: var(--gold); }
+  .footer-social { display: flex; gap: 0.85rem; }
+  .footer-social a { width: 32px; height: 32px; border: 0.5px solid rgba(245,234,207,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(245,234,207,0.6); text-decoration: none; transition: border-color 0.2s, color 0.2s; font-size: 0.7rem; }
+  .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+  .footer-signup { padding-bottom: 2.25rem; border-bottom: 0.5px solid rgba(245,234,207,0.14); margin-bottom: 2.25rem; }
+  .footer-signup-label { font-family: var(--sans); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; }
+  .signup-form { display: flex; gap: 0.6rem; max-width: 380px; flex-wrap: wrap; }
+  .signup-form input { flex: 1; min-width: 180px; padding: 0.7rem 0.9rem; background: rgba(245,234,207,0.06); border: 0.5px solid rgba(245,234,207,0.25); color: var(--light-cream); font-family: var(--sans); font-size: 0.75rem; }
+  .signup-form input::placeholder { color: rgba(245,234,207,0.4); }
+  .signup-form button { padding: 0.7rem 1.3rem; background: var(--teal); color: #fff; border: none; font-family: var(--sans); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+  .signup-form button:hover { background: #3a8a92; }
+  .funder-block { padding-bottom: 2rem; border-bottom: 0.5px solid rgba(245,234,207,0.1); margin-bottom: 1.75rem; }
+  .funder-line { font-family: var(--sans); font-size: 0.66rem; line-height: 1.85; color: rgba(245,234,207,0.42); max-width: 820px; margin-bottom: 0.85rem; }
+  .funder-line:last-of-type { margin-bottom: 0; }
+  .fiscal-sponsor-row { margin-top: 1.25rem; font-family: var(--sans); font-size: 0.64rem; letter-spacing: 0.04em; color: rgba(245,234,207,0.4); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-family: var(--sans); font-size: 0.62rem; color: rgba(245,234,207,0.32); }
+  .footer-bottom a { color: rgba(245,234,207,0.5); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  .fade-in { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 56px; left: 0; right: 0; background: rgba(253,249,238,0.98); backdrop-filter: blur(12px); padding: 2rem 1.5rem 3rem; gap: 1.75rem; border-bottom: 0.5px solid var(--rule); }
+    .page-banner { padding: 7.5rem 1.5rem 3.5rem; }
+    section { padding: 3.5rem 1.5rem; }
+    .elements-grid { grid-template-columns: 1fr 1fr; }
+    .program-grid { grid-template-columns: 1fr; }
+    .program-cell { border-right: none; border-bottom: 0.5px solid var(--rule); }
+    .matters-grid, .glance-grid { grid-template-columns: 1fr; }
+    footer { padding: 3rem 1.5rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo" aria-label="Seasons of Strength home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="31 231 313 22" height="16" style="display:block;" aria-label="Seasons of Strength"><g fill="#46a5af"><path fill="#231f20" d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z"/></g>
+  <text x="33" y="249.6" font-family="Georgia, serif" font-size="18" fill="#231f20">Seasons of Strength</text></svg></a>
+  <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/our-story">About</a></li>
+    <li><a href="/portfolio" class="current">Bring the Work</a></li>
+    <li><a href="/watch">Watch</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <p class="page-banner-eyebrow">Bring the Work</p>
+    <h1 class="page-banner-title">Atlanta-area stories of resilience, brought to life through performance.</h1>
+    <p class="page-banner-sub">A live multidisciplinary work blending chamber orchestra, contemporary dance, videography, and real community voices.</p>
+  </div>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+<section class="about-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">About the Project</p>
+      <h2 class="section-title">Art as civic memory.</h2>
+      <div class="body-copy">
+        <p>Rooted in Newnan, Georgia's recovery after the 2021 EF-4 tornado, <strong>Seasons of Strength</strong> uses live music, movement, projected imagery, and recorded oral histories to transform local stories into an experience of resilience, remembrance, and connection.</p>
+        <p>Created and directed by Gwendolyn Kuhlmann, the work reflects a culture of collaboration, care, and collective action that defines the Atlanta region. It functions as art as civic memory &mdash; preserving lived experience while inviting audiences into a shared human story.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WATCH THE WORK -->
+<section class="watch-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">Watch the Work</p>
+      <h2 class="section-title">A short reel and oral-history excerpt.</h2>
+      <div class="watch-card">
+        <div class="watch-card-icon">&#9654;</div>
+        <div class="watch-card-text">
+          <p>Reel &amp; excerpt</p>
+          <p>Full performance documentation lives on the companion site.</p>
+        </div>
+        <a href="/watch" class="watch-card-link">Watch Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE EXPERIENCE -->
+<section class="experience-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">The Experience</p>
+      <h2 class="section-title">Four elements, one story.</h2>
+      <div class="elements-grid">
+        <div class="element-cell">
+          <div class="element-num">01</div>
+          <div class="element-title">Live Chamber Orchestra</div>
+          <div class="element-body">Musicians of the LaGrange Symphony Orchestra, performing live alongside the story.</div>
+        </div>
+        <div class="element-cell">
+          <div class="element-num">02</div>
+          <div class="element-title">Contemporary Dance</div>
+          <div class="element-body">Southern Arc Dance, translating testimony into movement.</div>
+        </div>
+        <div class="element-cell">
+          <div class="element-num">03</div>
+          <div class="element-title">Videography</div>
+          <div class="element-body">Documentary footage of the disaster and the community's response, projected live.</div>
+        </div>
+        <div class="element-cell">
+          <div class="element-num">04</div>
+          <div class="element-title">Real Recorded Voices</div>
+          <div class="element-body">Over 100 community members, telling the story in their own words.</div>
+        </div>
+      </div>
+      <p class="experience-result">The result is immersive and emotionally immediate &mdash; accessible across cultures and languages.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMING DETAILS -->
+<section class="program-details-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">Programming Details</p>
+      <h2 class="section-title">Scalable for any stage.</h2>
+      <div class="program-grid">
+        <div class="program-cell">
+          <div class="program-cell-label">Full Production</div>
+          <div class="program-cell-body">90 minutes, plus a 15-minute intermission.</div>
+        </div>
+        <div class="program-cell">
+          <div class="program-cell-label">Scalable Format</div>
+          <div class="program-cell-body">Adaptable to 20&ndash;45 minute curated segments for festivals and cultural programming.</div>
+        </div>
+        <div class="program-cell">
+          <div class="program-cell-label">Presentation Options</div>
+          <div class="program-cell-body">Performance excerpt &middot; performance with artist talk &middot; performance with facilitated cultural conversation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLABORATORS -->
+<section class="collab-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">Collaborators</p>
+      <h2 class="section-title">Created & directed by Gwendolyn Kuhlmann.</h2>
+      <div class="collab-list">
+        <p>In collaboration with choreographer <strong>Paulo Manso de Sousa</strong>, videographer <strong>Jake Barton</strong>, musicians of the <strong>LaGrange Symphony Orchestra</strong>, <strong>Southern Arc Dance</strong> (professional, community, and high school dancers), and the voices of over 100 community members.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS WORK MATTERS -->
+<section class="matters-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">Why This Work Matters</p>
+      <h2 class="section-title">Real stories, translated into shared artistic language.</h2>
+      <div class="body-copy">
+        <p>Seasons of Strength preserves real stories from a disaster-impacted community and translates them into a form audiences of any background can meet. For presenters, that means:</p>
+      </div>
+      <div class="matters-grid">
+        <div class="matters-item">
+          <div class="matters-item-title">Visual &amp; Emotional Impact</div>
+          <div class="matters-item-body">A strong, immediate experience for a live audience.</div>
+        </div>
+        <div class="matters-item">
+          <div class="matters-item-title">Cultural Grounding</div>
+          <div class="matters-item-body">Clear roots in the Atlanta region, with a story that travels.</div>
+        </div>
+        <div class="matters-item">
+          <div class="matters-item-title">Universal Themes</div>
+          <div class="matters-item-body">Resilience, community, and recovery read across audiences.</div>
+        </div>
+        <div class="matters-item">
+          <div class="matters-item-title">Flexible Programming</div>
+          <div class="matters-item-body">Scalable from a 20-minute excerpt to the full 90-minute production.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTION GALLERY -->
+<section class="gallery-section">
+  <div class="section-inner fade-in">
+    <p class="section-eyebrow" style="color:var(--gold);">Production Gallery</p>
+    <!-- TODO: add gallery grid once photo files are provided (see Wix media library) -->
+    <p class="gallery-note">Photography from the world premiere is on its way.</p>
+    <p class="gallery-credit">All photos by Jermon Clark, Focal Point Creative Services.</p>
+  </div>
+</section>
+
+<!-- AT A GLANCE -->
+<section class="glance-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">At a Glance</p>
+      <div class="glance-grid">
+        <div class="glance-item"><span class="glance-dot"></span><p>Rooted in Newnan, Georgia &mdash; greater Atlanta region</p></div>
+        <div class="glance-item"><span class="glance-dot"></span><p>Premiered March 21&ndash;22, 2026</p></div>
+        <div class="glance-item"><span class="glance-dot"></span><p>Adaptable for festivals and global cultural programming</p></div>
+        <div class="glance-item"><span class="glance-dot"></span><p>Built from 100+ community stories</p></div>
+        <div class="glance-item"><span class="glance-dot"></span><p>Features professional, community, and youth artists</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-eyebrow">What Presenters &amp; Partners Say</p>
+      <!-- TODO: real quote from Jennifer Leebern (tornado case worker, Bridging the Gap) needed — not yet written. Placeholder below is intentionally not a quote. -->
+      <div class="testimonial-placeholder">
+        <p>A testimonial from Jennifer Leebern, tornado case worker for Bridging the Gap in Newnan, on the show's impact on survivors who attended, is being finalized and will go here.</p>
+        <cite>Jennifer Leebern &middot; Bridging the Gap</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMING INQUIRIES -->
+<section class="inquiries-section">
+  <div class="section-inner fade-in">
+    <h2 class="inquiries-title">Programming inquiries</h2>
+    <p class="inquiries-body">Gwendolyn Kuhlmann, Creator &amp; Director</p>
+    <a href="mailto:info@seasonsofstrengthnewnan.org" class="inquiries-email">info@seasonsofstrengthnewnan.org</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Seasons of Strength home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="31 231 313 22" height="14" aria-label="Seasons of Strength"><g fill="#f5eacf"><path d="M 7.625 0.15625 C 6.332031 0.15625 5.09375 -0.0507812 3.90625 -0.46875 C 2.726562 -0.882812 1.816406 -1.429688 1.171875 -2.109375 L 1.890625 -3.53125 C 2.515625 -2.894531 3.347656 -2.382812 4.390625 -2 C 5.441406 -1.613281 6.519531 -1.421875 7.625 -1.421875 C 9.1875 -1.421875 10.359375 -1.703125 11.140625 -2.265625 C 11.921875 -2.835938 12.3125 -3.582031 12.3125 -4.5 C 12.3125 -5.195312 12.097656 -5.75 11.671875 -6.15625 C 11.242188 -6.570312 10.722656 -6.890625 10.109375 -7.109375 C 9.503906 -7.335938 8.65625 -7.585938 7.5625 -7.859375 C 6.25 -8.191406 5.203125 -8.507812 4.421875 -8.8125 C 3.640625 -9.113281 2.972656 -9.578125 2.421875 -10.203125 C 1.867188 -10.835938 1.59375 -11.695312 1.59375 -12.78125 C 1.59375 -13.65625 1.820312 -14.453125 2.28125 -15.171875 C 2.75 -15.898438 3.460938 -16.476562 4.421875 -16.90625 C 5.378906 -17.332031 6.570312 -17.546875 8 -17.546875 C 9 -17.546875 9.972656 -17.410156 10.921875 -17.140625 C 11.878906 -16.867188 12.707031 -16.492188 13.40625 -16.015625 L 12.78125 -14.546875 C 12.050781 -15.023438 11.269531 -15.382812 10.4375 -15.625 C 9.613281 -15.863281 8.800781 -15.984375 8 -15.984375 C 6.476562 -15.984375 5.332031 -15.6875 4.5625 -15.09375 C 3.789062 -14.507812 3.40625 -13.753906 3.40625 -12.828125 C 3.40625 -12.128906 3.613281 -11.566406 4.03125 -11.140625 C 4.457031 -10.722656 4.988281 -10.398438 5.625 -10.171875 C 6.269531 -9.953125 7.128906 -9.710938 8.203125 -9.453125 C 9.484375 -9.128906 10.515625 -8.8125 11.296875 -8.5 C 12.085938 -8.195312 12.753906 -7.734375 13.296875 -7.109375 C 13.847656 -6.492188 14.125 -5.65625 14.125 -4.59375 C 14.125 -3.71875 13.882812 -2.921875 13.40625 -2.203125 C 12.9375 -1.484375 12.210938 -0.910156 11.234375 -0.484375 C 10.253906 -0.0546875 9.050781 0.15625 7.625 0.15625 Z" transform="translate(33,249.6)"/></g>
+          <text x="55" y="249.6" font-family="Georgia, serif" font-size="18" fill="#f5eacf" letter-spacing="1">Seasons of Strength</text>
+        </svg></a>
+        <p class="footer-credit">Logo by Al Smith, Coweta County Commissioner and local artist, 2001 Art Studio.</p>
+      </div>
+      <ul class="footer-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/our-story">About</a></li>
+        <li><a href="/portfolio" class="current">Bring the Work</a></li>
+        <li><a href="/watch">Watch</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/seasonsofstrengthnewnan/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/seasonsofstrengthnewnan/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/@seasonsofstrengthnewnan" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+
+    <div class="footer-signup">
+      <p class="footer-signup-label">Stay connected</p>
+      <!-- TODO: wire to real Mailchimp (or replacement) list — placeholder form for now -->
+      <form class="signup-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Email address" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="funder-block">
+      <p class="funder-line">This program is supported in part by Georgia Council for the Arts through the appropriations of the Georgia General Assembly. Georgia Council for the Arts also receives support from its partner agency &ndash; the National Endowment for the Arts.</p>
+      <p class="funder-line">The project is also supported by Georgia Humanities, in partnership with the Georgia Department of Economic Development, through appropriations made by the Georgia General Assembly.</p>
+      <p class="funder-line">Seasons of Strength is also the proud recipient of grants from 100 Women Who Care, the 2025 YOUTH LEAD GA Bullard Community Champions, and the Caring Communities Foundation Coweta Together Grant.</p>
+      <p class="fiscal-sponsor-row">Fiscally sponsored by Caring Communities Foundation</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Seasons of Strength &middot; Newnan, Georgia</p>
+      <a href="mailto:info@seasonsofstrengthnewnan.org">info@seasonsofstrengthnewnan.org</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+</script>
+</body>
+</html>
